@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="flexNext.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flixNextCon">
+
+        <div class="nextcon">
+
+
+            <div class="nextcon-1">
+
+                <div style="width: 50%; background-color: black;" id="product_first_half" class="product">
+                    <div class="commentHeading">
+                        <p>Images</p>
+                    </div>
+                    <div style=" display: flex; align-items: center; justify-content: center; width: 100%;height: 100%; background-color: white;" class="picdiv">
+                        
+                        <div class="div" id="picdiv2" style="display: flex; align-items: center; justify-content: center;">
+                            <img id="picdiv" style="width: 70%; height: 70%;" id="picdiv">
+
+                        </div>
+                        <div style="width: 30%; height: 100%;" class="picdiv" id="pics">
+                        
+                     
+
+                        </div>
+
+
+                    </div>
+                   
+
+                </div>
+                <div class="product" id="product_second_half">
+                    <div style=" background-color: black;" class="commentHeading">
+                        <p id="comment_title">Comments</p>
+                    </div>
+                    <div class="import">
+                        <div class="container">
+                            <div id="container1" class="container1">
+
+
+
+                                <div id="cont" class="cont">
+
+
+                                    <div id="contain" class="contain">
+
+
+                                        <div id="title_Comments" class="commentHeading">
+                                            <p>Previous Comments</p>
+                                        </div>
+
+
+                                    </div>
+                                    <form id="textarea_cont_comment" class="textarea_cont">
+                                        <textarea name="comment_text" id="Writing1" placeholder="Write Comment"></textarea>
+                                        <div id="send_c" class="buttons_pair">
+                                            <div onclick="clickcommentPic()"  style="border:solid black 1px; background-color: aqua; height: 100%; width: 40%; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; cursor: pointer" >
+                                                <p style="color: black">Attach Image</p>
+                                            </div>
+                                            <!-- <div  id="send_comment" >
+                                                <p style="color: black">send</p>
+                                            </div> -->
+                                            <input id="commentPicfile" style="display: none;"  name="commentPicfile" type="file">
+                                            
+                                            <input id="C_submitor"  style="border:solid black 1px; background-color: aqua;; height: 100%; width: 40%; display: flex; align-items: center; justify-content: center ; position: absolute; right: 0; cursor: pointer" type="submit"  class="submit">
+                                        </div>
+                                        
+                                    </form>
+                                    <form id="textarea_cont" class="textarea_cont">
+                                        <textarea name="reply_text" id="Writing2" placeholder="Write a reply..."></textarea>
+                                        <div id="send_r" class="buttons_pair">
+                                            <div onclick="clickreplyPic()"  style="border:solid black 1px; background-color: aqua; height: 100%; width: 40%; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; cursor: pointer " >
+                                                <p style="color: black">Attach Image</p>
+                                            </div>
+                                          
+                                            <input  style="border:solid black 1px; background-color: aqua;; height: 100%; width: 40%; display: flex; align-items: center; justify-content: center ; position: absolute; right: 0; cursor: pointer" type="submit"  class="submit">
+                                            <input id="replyPicfile" style="display: none;"  name="commentPicfile" type="file">
+                                        </div>
+                                        
+
+                                    </form>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="starRatingCon">
+            <div class="starRatinginside">
+                <div class="left"
+                    style="text-align: center; display: flex; justify-content: center; align-items: center;">
+                    <p id="crnt_rating_fetched">Current Product Rating: No Reviews Yet</p> 
+                   
+
+
+                </div>
+                <div class="left"
+                    style="text-align: center; align-items: center; display: flex; flex-direction: column; justify-content: center;">
+                   
+                    <div class="rate">
+
+                        <div class="starbox">
+                            <img id="star" src="start.png">
+                        </div>
+                        <div class="starbox">
+                            <img id="star" src="start.png">
+                        </div>
+                        <div class="starbox">
+                            <img id="star" src="start.png">
+                        </div>
+                        <div class="starbox">
+                            <img id="star" src="start.png">
+                        </div>
+                        <div class="starbox">
+                            <img id="star" src="start.png">
+                        </div>
+
+
+
+                    </div>
+                    
+
+                </div>
+                <div class="left">
+                    <div id="rating_btn" class="button">
+                        <p>Rate Now</p>
+                    </div>
+                </div>
+               
+
+            </div>
+            <div id="starRatinginside_right" class="starRatinginside">
+                <div style=" width: 150px;font-size: small; color: gray;" onclick="Main_add_to_cart()" id="mainAdd_to_cart" class="second_nav">
+                  ADD TO CART
+                </div>
+                <div style="font-size:medium; color: gray;"  id="Comment" class="second_nav">
+                    Comment
+                </div>
+                <div style="font-size: medium; color: gray;" id="Certification" class="second_nav">
+                    Certification
+                    
+                </div>
+                <div style="font-size: medium; color: gray;" id="Details" class="second_nav">
+                    
+                    Details
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div style="" class="con-3">
+            <div style="margin-top: 2px; border: 0px;" id="con-3-1" class="con-3-1">
+                <div  class="titleDiv">
+                    <div  id="title" class="titleSubdiv">
+                        <p style="color: black; font-family:Arial, Helvetica, sans-serif; padding: 5px;" id="relation"></p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <div style="color: black;" class="con-4">
+            <div style="display: flex; align-items: center; justify-content: center;" class="con-4-1">
+                <div style=" height: 150px; width: 90%;" class="title_name_con">
+                    <div style="display: flex; align-items: center; justify-content: center; font-weight: bolder; height: 20%;"
+                        class="inleft">
+                        <p style="color: black;">BIKE FACTORY</p>
+                    </div>
+                    <div style=" height: 100px; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center;height: 70%;"
+                        class="inleft">
+                        <img style="width: 35%; aspect-ratio: 1/1;" src="logo.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="con-4-1">
+
+                <div style="display: block; text-align: center;" class="line1">
+                    <div class="links">
+                        <a style="text-decoration: underline; cursor:pointer" id="Ask_footer" >Ask Question </a>
+                    </div>
+                    <div class="links">
+                        <a style="text-decoration: underline; cursor:pointer" id="Notify_footer" >Notification </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="con-4-1">
+
+                <div style="display: block; text-align: center;" class="line1">
+                    <div class="links">
+                        <a style="text-decoration: underline; cursor:pointer" id="profile_footer" >Profile </a>
+                    </div>
+                    <div class="links">
+                        <a style="text-decoration: underline; cursor:pointer" id="reg_footer" >Register </a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="shopMap" style="cursor:pointer; text-decoration: underline" class="con-4-1">
+                Bike Factory </br>
+                123 Main Street </br>
+                Sylhet, Bangladesh
+            </div>
+            <div class="con-4-1">
+                <div class="con-4-1-1">
+                    <div style=" display: flex; align-items: center; justify-content: center;" class="inCon-4">Contact Us
+                    </div>
+                    <div style=" display: flex; align-items: center; justify-content: center;" class="inCon-4">
+                        <div class="cir">
+                            <img  style="height: 100%; width: 100%; border-radius: 50%;" src="facebook.jpg">
+                        </div>
+                        <div class="cir">
+                            <img  style="height: 100%; width: 100%; border-radius: 50%;" src="gmail.png">
+                        </div>
+                        <div class="cir">
+                            <img  style="height: 100%; width: 100%; border-radius: 50%;" src="messanger.png">
+                        </div>
+                        <div class="cir">
+                            <img  style="height: 100%; width: 100%; border-radius: 50%;" src="whatsapp.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="flexNext.js"></script>
+</body>
+
+</html>

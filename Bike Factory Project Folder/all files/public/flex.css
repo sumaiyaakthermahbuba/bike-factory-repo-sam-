@@ -1,0 +1,400 @@
+.con-1{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    align-content: flex-start;
+    
+
+}
+.container-1{
+    height: 35px;
+    width: 80px;
+    margin: 20px;
+    min-width: fit-content;
+   
+    background-color: white;
+    border-radius: 30px;
+    border: solid black;
+    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.0vw;
+    text-wrap: nowrap;
+    padding: 3px;
+}
+.container-1:hover{
+    background-color: aqua;
+    
+}
+#home{
+    background-color: aqua;
+    
+}
+@media screen and (max-width: 780px ) {
+    .con-1{
+        
+        display: block;
+        
+        
+    }
+    .container-1{
+        border-radius: 0px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container-1{
+       
+        font-size: 3.1vw;
+    }
+    
+}
+
+/********************************************************/
+
+.con-2{
+  height: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.con-2-1{
+    
+    background-color: black;
+    height: 94%;
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: solid 10px black;
+}
+
+.slide{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    border: solid 3px;
+    background-color: blue;
+    animation: slide 10s infinite; 
+
+    
+    
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0%);
+        
+    }
+    10%{
+
+        transform: translateX(-0%);
+    }
+    20%{
+
+        transform: translateX(-200%);
+    }
+    30%{
+
+        transform: translateX(-200%);
+    }
+    40%{
+
+        transform: translateX(-400%);
+    }
+    50%{
+        transform: translateX(-400%);
+
+    }
+    60%{
+        transform: translateX(-600%);
+
+    }
+    70%{
+        transform: translateX(-600%);
+
+    }
+    80%{
+        transform: translateX(-800%);
+
+    }
+    90%{
+        transform: translateX(-800%);
+
+    }
+}
+
+/********************************************************************/
+
+.con-3{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con-3-1{
+    width: 95%;
+    background-color:#ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.titleDiv{
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 5px solidrgb(8, 8, 8);
+    display: flex;
+    color: black;
+    /* justify-content: flex-end; */
+    
+}
+.titleSubdiv{
+    height: 60px;
+    width: 120px;
+    /* background-color: red; */
+    margin: 20px;
+    min-width: 80px;
+}
+#title{
+     width: 60%;
+     border: 1px solid aqua;
+     box-sizing: border-box;
+     font-size: 1.5vw;
+     display: flex;
+     align-items: center;
+     
+     
+    
+}
+#tit{
+    color: white;
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+
+.item1{
+    height: 250px;
+    position:relative;
+    
+    background-color: #ffffff;
+    margin: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); 
+    flex-basis: 300px;
+    border: solid 5px rgb(140, 202, 229);
+ 
+   
+}
+/* .item1{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.item1Pic{
+    background-color: white;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.item1_image{
+    height: 80%;
+    width: 80%;
+}
+.tk{
+    height: 12%;
+    background-color: white;
+
+}
+.item1PicDetails{
+    height: 12%;
+    /* background-color: red; */
+}
+.addToCart{
+    height: 12%;
+    width:100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    font-size: 1.8vh;
+  
+}
+.discount{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vh;
+    height: 30px;
+    width: fit-content;
+    padding: 2px;
+    background-color: white;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.tkbox{
+    position: absolute;
+    right:0;
+    font-size: 1vh;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: fit-content;
+    background-color: white;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+@media screen and (max-width :780px) {
+    .item1{
+        height: 150px;
+    
+        
+        background-color: white;
+        margin: 2px;
+       
+        flex-basis: 95px;
+     
+       
+    }
+    .addToCart{
+        
+        font-size: 1.2vh;
+      
+    }
+}
+
+
+/***********************************************/
+
+.con-4{
+    /* height: 300px; */
+    width: 100%;
+    background-color: black;
+    /* border: solid gray 5px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.con-4-1{
+    height: 300px;
+    width: 20%;    
+    background-color: #ffffff;
+    /* margin: 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    /* border: solid gray 2px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    flex-basis: 300px;
+}
+
+.cir{
+    border-radius: 1000px;
+    background-color: white;
+    height: 50px;
+    aspect-ratio: 1/1;
+    margin: 5px;
+    cursor: pointer;
+}
+.cir:hover{
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    height: 80px;
+    aspect-ratio: 1/1;
+
+}
+
+.con-4-1-1{
+    height: 100px;
+    width: 70%;
+    /* background-color: red; */
+}
+.inCon-4{
+    height: 50%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.inleft{
+    /* height: 50%; */
+    width: 100%;
+   
+}
+
+.links a{
+    
+    color: black;
+    /* text-decoration: none; */
+}
+.links {
+    margin-top: 20px;
+   
+}
+
+
+
+
+/* div.slide:nth-child(1),
+div.slide:nth-child(2){
+    background-color: red;
+    margin-right: 10px;
+    
+
+} */
+
+select {
+    height: 100%;
+    width: 100%;
+    background-color:aqua;
+    
+    
+}
+
+/* Style the options */
+option {
+   height: 100%;
+   /* width: 80%; */
+    background-color:aquamarine;
+    color: black;
+    text-align: center;
+    font-size: 1.8vh;
+}
+
+.slidePic{
+    background-color: white;
+    height: 75%;
+}
+#notify_num{
+    height: 20px;
+     aspect-ratio: 1/1;
+     border-radius: 1000%;
+     background-color: aqua;
+     position: absolute;
+     right: -6px;
+     top: -6px;
+     font-size: small;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: solid red 0.3px;
+     color: red;
+
+}

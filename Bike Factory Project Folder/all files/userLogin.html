@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="userLogin.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="con">
+            <div id="logo" class="Login_segment">
+                <div class="circle">
+                    <img src="userpic.jpg">
+
+                </div>
+
+            </div>
+            <div id="title" class="Login_segment">
+                <p id="temp">USER LOGIN</p>
+
+            </div>
+      
+            <div id="phone_email" class="Login_segment">
+                <div class="left">
+                    <label>EMAIL/PHONE</label>
+
+                </div>
+                <div class="right">
+                    <input id="userId" name="userId" type="text">
+
+                </div>
+
+            </div>
+            <div id="password" class="Login_segment">
+                <div class="left">
+                    <label >PASSWORD</label>
+
+                </div>
+                <div class="right">
+                    <input id="userPass" name="userPass" type="text">
+
+                </div>
+
+            </div>
+            
+            <div class="submit">
+                <button onclick="signin_req()" id="submit">SIGN IN</button>
+                <button onclick="register_req()" id="submit">REGISTER</button>
+
+            </div>
+   
+
+        </div>
+
+    </div>
+    <script>
+      
+        function signin_req(){
+           var userId= document.getElementById("userId").value;
+           var userPass= document.getElementById("userPass").value;
+           fetch(`/signin_req?userId=${userId}&userPass=${userPass}`,{
+            method:"POST"
+           }).then((response)=>{
+            return response.json();
+           }).then((data)=>{
+               
+               if(data==`${userId}`){
+                   
+                   document.getElementById("temp").innerText="SUCCESS";
+                   localStorage.setItem("userID",data);
+                   window.location.href="http://localhost:3001/";
+                   
+                   
+                }
+                else{
+                document.getElementById("temp").innerText=data;
+               
+            }
+           })
+          
+          
+
+        }
+        function register_req(){
+            if(document.getElementById("userId").value!=""){
+                
+           var userId= document.getElementById("userId").value;
+           var userPass= document.getElementById("userPass").value;
+           fetch(`/register_req?userId=${userId}&userPass=${userPass}`,{
+            method:"POST"
+           }).then((response)=>{
+            return response.json();
+           }).then((data)=>{
+            if(data==userId)
+            document.getElementById("temp").innerText="SUCCESS";
+        else
+        document.getElementById("temp").innerText=data;
+            console.log(data);
+            if(data==`err`){
+
+                alert("All Registration Protocols:phone must be of exactly 11 digits, Password must be of at least 7 characters with at least 1 numeric, 1 uppercase and the phone and password cannot be same");
+            }
+           })
+          
+          
+        }
+        else{
+            document.getElementById("temp").innerText="Phone Number Field Can't Be Empty";
+
+        }
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="flex.css" rel="stylesheet">
+    <link href="./public/flex.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="con-1">
+            <div class="container-1" id="home">
+                <p>HOME</p>
+            </div>
+            <div style="position: relative;" id="notify" class="container-1">
+                <p>Notification</p>
+                <div style="display: none;" id="notify_num"></div>
+            </div>
+            <div style="display: none;" class="container-1">
+                <p>Contact</p>
+            </div>
+
+            <div id="ask" class="container-1">
+                <p>Ask Question</p>
+            </div>
+            <div id="cart" class="container-1">
+                <p>View Cart</p>
+            </div>
+            <div id="profile" class="container-1">
+                <p>Your Profile</p>
+            </div>
+            <div id="login" class="container-1">
+                <p>Login</p>
+            </div>
+
+
+        </div>
+
+        <div class="con-2">
+            <div id="slide" class="con-2-1">
+
+
+
+            </div>
+        </div>
+
+
+        <div class="con-3">
+            <div id="con-3-1" class="con-3-1">
+                <div style="color: black;" class="titleDiv">
+                    <div style="color: black; margin-left: 30px; border: solid black;" id="title" class="titleSubdiv">
+                        <p  style="color: black;" id="tit">BIKE FACTORY ALL PRODUCTS</p>
+                    </div>
+                    <div id="select_category" class="titleSubdiv">
+
+                        <select id="type_Selected" onchange="on_cng1()">
+                            <option value="">View Type</option>
+                           
+                        </select>
+
+                    </div>
+                    <div id="titleSubdiv" class="titleSubdiv">
+                        <select id="Brand_Selected" onchange="on_cng2()">
+                            <option value="">View By Brand</option>
+                         
+
+                        </select>
+                    </div>
+                    <div class="titleSubdiv">
+                        <select id="sort" onchange="on_cng3()">
+                            <option value="null">Sort By</option>
+                            <option value="brand">Brand</option>
+                            <option value="product_type">Product Type</option>
+                            <option value="price DESC">Price</option>
+                            <!-- <option value="Rating DESC">Rating</option> -->
+                            <option value="Discount DESC">Discount</option>
+                            <option value="available_colors">color</option>
+
+                        </select>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <div style="color: black;" class="con-4">
+            <div style="display: flex; align-items: center; justify-content: center;" class="con-4-1">
+                <div style=" height: 150px; width: 90%;" class="title_name_con">
+                    <div style="display: flex; align-items: center; justify-content: center; font-weight: bolder; height: 20%;"
+                        class="inleft">
+                        <p>BIKE FACTORY</p>
+                    </div>
+                    <div style=" height: 100px; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center;height: 70%; "
+                        class="inleft">
+                        <img style="height: 100%; aspect-ratio: 1/1;" src="logo.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="con-4-1">
+
+                <div style="display: block; text-align: center;" class="line1">
+                    <div class="links">
+                        <a style="text-decoration: underline; cursor:pointer" id="Ask_footer" >Ask Question </a>
+                    </div>
+                    <div class="links">
+                        <a style="text-decoration: underline; cursor:pointer" id="Notify_footer" >Notification </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="con-4-1">
+
+                <div style="display: block; text-align: center;" class="line1">
+                    <div class="links">
+                        <a style="text-decoration: underline; cursor:pointer" id="profile_footer" >Profile </a>
+                    </div>
+                    <div class="links">
+                        <a style="text-decoration: underline; cursor:pointer" id="reg_footer" >Register </a>
+                    </div>
+                </div>
+
+            </div>
+       
+            <div id="shopMap" style="cursor:pointer; text-decoration: underline" class="con-4-1">
+                Bike Factory </br>
+                123 Main Street </br>
+                Sylhet, Bangladesh
+            </div>
+            <div class="con-4-1">
+                <div class="con-4-1-1">
+                    <div style=" display: flex; align-items: center; justify-content: center;" class="inCon-4">Contact Us
+                    </div>
+                    <div style=" display: flex; align-items: center; justify-content: center;" class="inCon-4">
+                        <div class="cir">
+                            <img  style="height: 100%; width: 100%; border-radius: 50%;" src="facebook.jpg">
+                        </div>
+                        <div class="cir">
+                            <img  style="height: 100%; width: 100%; border-radius: 50%;" src="gmail.png">
+                        </div>
+                        <div class="cir">
+                            <img  style="height: 100%; width: 100%; border-radius: 50%;" src="messanger.png">
+                        </div>
+                        <div class="cir">
+                            <img  style="height: 100%; width: 100%; border-radius: 50%;" src="whatsapp.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="flex.js"></script>
+</body>
+
+</html>

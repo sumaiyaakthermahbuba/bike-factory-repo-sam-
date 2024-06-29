@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="login_as.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="con">
+            <div id="title" class="Login_segment">
+                <p>LOGIN AS</p>
+
+            </div>
+
+            
+          <div class="bottom">
+            <div class="two_parts">
+                <div class="picholder">
+                    <div class="circle">
+                        <img src="userpic.jpg">
+                    </div>
+                </div>
+               
+                <div class="title">
+                    <div onclick="user()" class="button">
+                        <p >User</p>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="two_parts">
+                <div class="picholder">
+                    <div class="circle">
+                        <img src="admin-logo-3.png">
+                        
+                    </div>
+                    
+                </div>
+              
+                <div class="title">
+                    <div onclick="admin()" class="button">
+                        <p>Admin</p>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+    <script>
+        function admin(){
+            window.location.href="http://localhost:3001/admin_login";
+        }
+        function user(){
+            window.location.href="http://localhost:3001/user_login";
+        }
+    </script>
+</body>
+</html>

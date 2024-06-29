@@ -1,0 +1,187 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background-image: url('luxa.org-opacity-changed-logo.png');
+    background-size:70%;
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.con{
+    background-color: rgb(38, 173, 173);
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: solid 2px aqua;
+    opacity: 90%;
+    min-width: 300px;
+    
+    border-radius: 20px;
+    
+    
+}
+.half{
+    opacity: 90%;
+    height: 49%;
+    min-width: 50%;
+    flex-grow: 1;
+    border-radius: 200px;
+    background-color: aqua;
+ 
+    margin: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.quad{
+    border-radius: 20px;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8vw;
+
+    position: relative;
+}
+
+.layer2{
+    
+    width: 150px;
+    aspect-ratio: 1/1;
+    background-color: black;
+    position: absolute;
+    /* z-index: -600; */
+    /* margin: 1px; */
+    border-radius: 1000%;
+    border: solid aqua 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+   
+    
+}
+@media screen and (max-height:720px)  {
+    .layer2{
+        width: 100px;
+    }
+    .quad{
+        font-size: 1.1vw;
+    }
+    
+}
+@media screen and (max-width:720px), screen and (max-width:720px)  {
+    .layer2{
+        width: 100px;
+    }
+    .quad{
+        font-size: 1.8vw;
+    }
+    
+}
+.quad:hover{
+    background-color: aqua;
+    cursor: pointer;
+    color: black;
+}
+.layer2:hover{
+    background-color: aqua;
+    cursor: pointer;
+    color: black;
+}
+
+ #last_op{
+    position: absolute;
+    height: 5%;
+    width: fit-content;
+    font-size: 2vh;
+    text-wrap: nowrap;
+    padding: 5px;
+    /* margin: 1px; */
+    /* display:block; */
+    color: black;
+    /* z-index: 1000; */
+    bottom: 0;
+    background-color: aqua;
+    margin-bottom: 50px;
+    opacity: 100%;
+    
+    
+    
+} 
+#last_op2{
+    position: absolute;
+    height: 5%;
+    width: fit-content;
+    font-size: 2vh;
+    text-wrap: nowrap;
+    padding: 5px;
+    /* margin: 1px; */
+    /* display:block; */
+    color: white;
+    background-color: black;
+    z-index: 1000;
+    bottom: 0;
+    margin-bottom: 50px;
+    opacity: 90%;
+    border: solid 1px aqua;
+    
+    
+    
+} 
+#last_op2:hover{
+    
+    background-color: aqua;
+    color: black;
+}
+
+ #last{
+    position: absolute;
+    height: 5%;
+    width: 50%;
+    font-size: 3vw;
+    padding: 1%;
+    /* margin: 1px; */
+    /* display:block; */
+    color: white;
+    background-color: black;
+    z-index: 1000;
+    border: solid aqua;
+    top: 0;
+    opacity: 60%;
+    margin: 2%;
+    cursor: auto;
+    
+} 
+ #last_op:hover{
+   opacity: 100%;
+} 
+
+.notification_no{
+    color: black;
+  
+}
+.notification{
+    height: 8%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgb(102, 125, 232);
+    position: absolute;
+    left: 45%;
+    top: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}

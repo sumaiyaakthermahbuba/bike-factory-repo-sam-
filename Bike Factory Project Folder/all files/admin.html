@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="admin.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="con">
+            <div id="logo" class="Login_segment">
+                <div class="circle">
+                    <img src="admin-logo-3.png">
+
+                </div>
+
+            </div>
+            <div id="title" class="Login_segment">
+                <p id="temp">ADMIN LOGIN</p>
+
+            </div>
+            <div id="phone_email" class="Login_segment">
+                <div class="left">
+                    <label>EMAIL/PHONE</label>
+
+                </div>
+                <div class="right">
+                    <input id="adminId" type="text">
+
+                </div>
+
+            </div>
+            <div id="password" class="Login_segment">
+                <div class="left">
+                    <label>PASSWORD</label>
+
+                </div>
+                <div class="right">
+                    <input id="adminPass" type="text">
+
+                </div>
+
+            </div>
+            <div class="submit">
+                <button onclick="admin_Login_req()" id="submit">Login</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+       function admin_Login_req(){
+        if(document.getElementById("adminId").value!=""){
+        var adminId= document.getElementById("adminId").value;
+           var adminPass= document.getElementById("adminPass").value;
+           fetch(`/admin_req?adminId=${adminId}&adminPass=${adminPass}`,{
+            method:"POST"
+           }).then((response)=>{
+            return response.json();
+           }).then((data)=>{
+         
+            
+            if(data.id==`${adminId}` && data.pass==`${adminPass}`){
+                
+                localStorage.setItem("adminPass",data.pass);
+                localStorage.setItem("adminID",data.id);
+                document.getElementById("temp").innerText="SUCCESS";
+              
+                   window.location.href=`http://localhost:3001/admin_panel?adminID=${adminId}&adminPass=${adminPass}`
+               
+                
+            }
+            else{
+                document.getElementById("temp").innerText=data;
+
+            }
+
+           })
+        }
+       }
+    </script>
+    
+</body>
+</html>

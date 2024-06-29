@@ -1,0 +1,167 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.con{
+    background-color: aqua;
+    height: 50%;
+    width: 30%;
+    border: solid 2px aqua;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.Login_segment{
+    background-color: black;
+    height: 25%;
+    margin-top: 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    height: 80%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    
+    margin-top: 1%;
+    border-radius: 100%;
+    margin: 5px;
+    
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    height: 7%;
+    font-weight: bolder;
+    color: aqua;
+    font-size: 2.5vh;
+}
+.left{
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    margin: 2px;
+
+}
+#phone_email{
+    height: 10% ;
+    
+    
+}
+#password{
+    flex-grow: 1;
+
+}
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    background-color: aqua;
+}
+
+#submit:hover{
+    background-color: black;
+    color: white;
+}
+input{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 100%;
+    
+    /* pointer-events: none; */
+}
+input::placeholder{
+
+    font-weight: 500;
+    /* color: black; */
+    font-size: 2vh;
+    text-align: center;
+    /* pointer-events: none; */
+}
+label{
+    font-size: 2vh;
+    font-weight: bolder;
+    color: black;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+}
+.edit_pic{
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    /* position: absolute; */
+    
+
+}
+.submit{
+    height: 100%;
+    /* width: 33.33%; */
+    background-color: white;
+    
+    box-sizing: border-box;
+    
+    
+    
+}
+#edit_img{
+    /* visibility: hidden; */
+    width: 50%;
+    border: solid 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+#submit{
+    background-color: aqua;
+    border: solid 2px;
+    width: 100%;
+    
+    cursor: pointer;
+}
+#edt{
+    position: absolute;
+    visibility: hidden;
+    width: 10%;
+    /* visibility: hidden; */
+    font-size: 3vh;
+    
+    }
+   textarea{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+   }
